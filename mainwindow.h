@@ -11,8 +11,6 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
     QTcpSocket * my_socket{nullptr};
-    QTcpSocket * interlocutor_socket{nullptr};
-    QString my_ip{};
 public:
     explicit MainWindow(QString ip="127.0.0.1",QWidget *parent = nullptr);
     ~MainWindow();
